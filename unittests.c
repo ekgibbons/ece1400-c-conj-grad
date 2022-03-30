@@ -94,7 +94,7 @@ UTEST(mtxio, write_1d_mtx)
 
 UTEST(linalg, mult_ax)
 {
-    int ret = system("python tests/python_linalg_ax.py");
+    int ret = system("python3 tests/python_linalg_ax.py");
     char filename_in_A[] = "A_dax.mtx";
     char filename_in_x[] = "x_dax.mtx";
     char filename_in_sol[] = "sol_dax.mtx";
@@ -130,7 +130,7 @@ UTEST(linalg, mult_ax)
 
 UTEST(linalg, mult_ata)
 {
-    int ret = system("python tests/python_linalg_ata.py");
+    int ret = system("python3 tests/python_linalg_ata.py");
     char filename_in_A[] = "A_ata.mtx";
     char filename_in_sol[] = "sol_ata.mtx";
 
@@ -169,7 +169,7 @@ UTEST(linalg, mult_ata)
 
 UTEST(linalg, mult_atx)
 {
-    int ret = system("python tests/python_linalg_atx.py");
+    int ret = system("python3 tests/python_linalg_atx.py");
     char filename_in_A[] = "A_atx.mtx";
     char filename_in_x[] = "x_atx.mtx";
     char filename_in_sol[] = "sol_atx.mtx";
@@ -213,7 +213,7 @@ UTEST(linalg, mult_atx)
 
 UTEST(linalg, mult_xy)
 {
-    int ret = system("python tests/python_linalg_mxy.py > tmp.txt");
+    int ret = system("python3 tests/python_linalg_mxy.py > tmp.txt");
     char filename_in_x[] = "x_dax.mtx";
     char filename_in_y[] = "y_dax.mtx";
 
@@ -254,7 +254,7 @@ UTEST(linalg, mult_xy)
 
 UTEST(linalg, add_xy)
 {
-    int ret = system("python tests/python_linalg_axy.py");
+    int ret = system("python3 tests/python_linalg_axy.py");
     char filename_in_x[] = "x_axy.mtx";
     char filename_in_y[] = "y_axy.mtx";
     char filename_in_c[] = "c_axy.mtx";
@@ -299,7 +299,7 @@ UTEST(linalg, add_xy)
 
 UTEST(linalg, solver)
 {
-    int ret = system("python tests/python_linalg_solve.py");
+    int ret = system("python3 tests/python_linalg_solve.py");
     char filename_in_A[] = "A_solve.mtx";
     char filename_in_b[] = "b_solve.mtx";
     char filename_in_sol[] = "sol_solve.mtx";
@@ -363,7 +363,7 @@ UTEST(main, usage)
 UTEST(main, output)
 {
 
-    int ret = system("python tests/python_linalg.py");
+    int ret = system("python3 tests/python_linalg.py");
     int out = system("./cg_solver A_test.mtx b_test.mtx "
 		     "x_sol.mtx > tmp_2.txt");
 
