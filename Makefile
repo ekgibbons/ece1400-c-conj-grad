@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wconversion -O3
+CFLAGS = -Wall -Wconversion -Werror -Wextra -O3
 
 LIBS = -lm
 EXEC = cg_solver
